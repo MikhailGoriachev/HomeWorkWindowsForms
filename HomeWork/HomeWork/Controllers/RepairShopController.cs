@@ -139,7 +139,7 @@ namespace HomeWork.Controllers
 
             // если файл не существует / пуст
             if (!file.Exists || file.Length == 0)
-                return;
+                throw new Exception("RepairShopController: Ошибка загрузки файла");
             
             // десериализация
             using (var fs = new FileStream(_saveFile, FileMode.OpenOrCreate, FileAccess.Read)) _repair = RepairShop.JsonDeserialization(fs);

@@ -35,8 +35,8 @@
             this.MniLoad = new System.Windows.Forms.ToolStripMenuItem();
             this.MniSave = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
-            this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.помощьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MniExit = new System.Windows.Forms.ToolStripMenuItem();
+            this.MsiHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.MsiInfoProgram = new System.Windows.Forms.ToolStripMenuItem();
             this.MsiCollection = new System.Windows.Forms.ToolStripMenuItem();
             this.MsiInitialization = new System.Windows.Forms.ToolStripMenuItem();
@@ -54,16 +54,16 @@
             this.MsiOrderByPrice = new System.Windows.Forms.ToolStripMenuItem();
             this.MsiOrderByPriceAscend = new System.Windows.Forms.ToolStripMenuItem();
             this.MsiOrderByPriceDescend = new System.Windows.Forms.ToolStripMenuItem();
-            this.выборкаИзКоллекцииToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MsiSelectBy = new System.Windows.Forms.ToolStripMenuItem();
             this.MsiSelectionByMinPrice = new System.Windows.Forms.ToolStripMenuItem();
             this.MsiSelectionByMaster = new System.Windows.Forms.ToolStripMenuItem();
             this.MsiSelectionByOwner = new System.Windows.Forms.ToolStripMenuItem();
             this.MsiSelectionByDiagonal = new System.Windows.Forms.ToolStripMenuItem();
             this.MsiRepairShop = new System.Windows.Forms.ToolStripMenuItem();
             this.MsiCreateRepairShop = new System.Windows.Forms.ToolStripMenuItem();
-            this.редактированиеДанныхToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MsiEditRepairShop = new System.Windows.Forms.ToolStripMenuItem();
             this.MsiSettings = new System.Windows.Forms.ToolStripMenuItem();
-            this.изменениеШрифтаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MniFont = new System.Windows.Forms.ToolStripMenuItem();
             this.MsiBackColor = new System.Windows.Forms.ToolStripMenuItem();
             this.StsMainStatus = new System.Windows.Forms.StatusStrip();
             this.SlbInfoCountElement = new System.Windows.Forms.ToolStripStatusLabel();
@@ -71,7 +71,7 @@
             this.SlbHistory = new System.Windows.Forms.ToolStripStatusLabel();
             this.SlbFileSave = new System.Windows.Forms.ToolStripStatusLabel();
             this.CmsMain = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.Cmi_ProgramInfo = new System.Windows.Forms.ToolStripMenuItem();
+            this.CmiProgramInfo = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.CmiMainExit = new System.Windows.Forms.ToolStripMenuItem();
             this.LbxTelevisions = new System.Windows.Forms.ListBox();
@@ -92,7 +92,7 @@
             this.CmiOrderByPrice = new System.Windows.Forms.ToolStripMenuItem();
             this.CmiOrderByPriceAscend = new System.Windows.Forms.ToolStripMenuItem();
             this.CmiOrderByPriceDescend = new System.Windows.Forms.ToolStripMenuItem();
-            this.выборкаТелевизоровToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.CmiSelectionBy = new System.Windows.Forms.ToolStripMenuItem();
             this.CmiSelectionByMinPrice = new System.Windows.Forms.ToolStripMenuItem();
             this.CmiSelectionByMaster = new System.Windows.Forms.ToolStripMenuItem();
             this.CmiSelectionByOwner = new System.Windows.Forms.ToolStripMenuItem();
@@ -126,14 +126,18 @@
             this.LblNameRepairShop = new System.Windows.Forms.Label();
             this.GbxRepairShop = new System.Windows.Forms.GroupBox();
             this.CmsRepairShop = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.создатьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.редактироватьДанныеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.CmiCreateRepairShop = new System.Windows.Forms.ToolStripMenuItem();
+            this.CmiEditRepairShop = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem9 = new System.Windows.Forms.ToolStripSeparator();
-            this.выходToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.CmiExit = new System.Windows.Forms.ToolStripMenuItem();
             this.OfdLoad = new System.Windows.Forms.OpenFileDialog();
             this.SfdSave = new System.Windows.Forms.SaveFileDialog();
             this.CdgChangeColorList = new System.Windows.Forms.ColorDialog();
             this.FdgChangeFontList = new System.Windows.Forms.FontDialog();
+            this.CmiListInfo = new System.Windows.Forms.ToolStripMenuItem();
+            this.CmiInfo = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem10 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripMenuItem11 = new System.Windows.Forms.ToolStripSeparator();
             this.MspMainMenu.SuspendLayout();
             this.StsMainStatus.SuspendLayout();
             this.CmsMain.SuspendLayout();
@@ -151,7 +155,7 @@
             this.MspMainMenu.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.MspMainMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MsiExit,
-            this.помощьToolStripMenuItem,
+            this.MsiHelp,
             this.MsiCollection,
             this.MsiRepairShop,
             this.MsiSettings});
@@ -167,7 +171,7 @@
             this.MniLoad,
             this.MniSave,
             this.toolStripMenuItem1,
-            this.выходToolStripMenuItem});
+            this.MniExit});
             this.MsiExit.Image = global::HomeWork.Properties.Resources.document_yellow;
             this.MsiExit.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.MsiExit.Name = "MsiExit";
@@ -199,26 +203,26 @@
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(299, 6);
             // 
-            // выходToolStripMenuItem
+            // MniExit
             // 
-            this.выходToolStripMenuItem.Image = global::HomeWork.Properties.Resources.door_out;
-            this.выходToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
-            this.выходToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            this.выходToolStripMenuItem.Size = new System.Drawing.Size(302, 38);
-            this.выходToolStripMenuItem.Text = "&Выход";
-            this.выходToolStripMenuItem.Click += new System.EventHandler(this.Exit_Command);
+            this.MniExit.Image = global::HomeWork.Properties.Resources.door_out;
+            this.MniExit.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.MniExit.Name = "MniExit";
+            this.MniExit.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
+            this.MniExit.Size = new System.Drawing.Size(302, 38);
+            this.MniExit.Text = "&Выход";
+            this.MniExit.Click += new System.EventHandler(this.Exit_Command);
             // 
-            // помощьToolStripMenuItem
+            // MsiHelp
             // 
-            this.помощьToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.помощьToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MsiHelp.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.MsiHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MsiInfoProgram});
-            this.помощьToolStripMenuItem.Image = global::HomeWork.Properties.Resources.help;
-            this.помощьToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.помощьToolStripMenuItem.Name = "помощьToolStripMenuItem";
-            this.помощьToolStripMenuItem.Size = new System.Drawing.Size(115, 36);
-            this.помощьToolStripMenuItem.Text = "&Помощь";
+            this.MsiHelp.Image = global::HomeWork.Properties.Resources.help;
+            this.MsiHelp.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.MsiHelp.Name = "MsiHelp";
+            this.MsiHelp.Size = new System.Drawing.Size(115, 36);
+            this.MsiHelp.Text = "&Помощь";
             // 
             // MsiInfoProgram
             // 
@@ -241,7 +245,7 @@
             this.MsiRemove,
             this.toolStripMenuItem6,
             this.MsiOrderBy,
-            this.выборкаИзКоллекцииToolStripMenuItem});
+            this.MsiSelectBy});
             this.MsiCollection.Image = global::HomeWork.Properties.Resources.account_menu;
             this.MsiCollection.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.MsiCollection.Name = "MsiCollection";
@@ -374,18 +378,18 @@
             this.MsiOrderByPriceDescend.Text = "По &убыванию";
             this.MsiOrderByPriceDescend.Click += new System.EventHandler(this.OrderBy_Command);
             // 
-            // выборкаИзКоллекцииToolStripMenuItem
+            // MsiSelectBy
             // 
-            this.выборкаИзКоллекцииToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MsiSelectBy.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MsiSelectionByMinPrice,
             this.MsiSelectionByMaster,
             this.MsiSelectionByOwner,
             this.MsiSelectionByDiagonal});
-            this.выборкаИзКоллекцииToolStripMenuItem.Image = global::HomeWork.Properties.Resources.select_by_adding_to_selection;
-            this.выборкаИзКоллекцииToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.выборкаИзКоллекцииToolStripMenuItem.Name = "выборкаИзКоллекцииToolStripMenuItem";
-            this.выборкаИзКоллекцииToolStripMenuItem.Size = new System.Drawing.Size(408, 38);
-            this.выборкаИзКоллекцииToolStripMenuItem.Text = "&Выборка из коллекции";
+            this.MsiSelectBy.Image = global::HomeWork.Properties.Resources.category_group_select;
+            this.MsiSelectBy.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.MsiSelectBy.Name = "MsiSelectBy";
+            this.MsiSelectBy.Size = new System.Drawing.Size(408, 38);
+            this.MsiSelectBy.Text = "&Выборка из коллекции";
             // 
             // MsiSelectionByMinPrice
             // 
@@ -419,7 +423,7 @@
             // 
             this.MsiRepairShop.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MsiCreateRepairShop,
-            this.редактированиеДанныхToolStripMenuItem});
+            this.MsiEditRepairShop});
             this.MsiRepairShop.Image = global::HomeWork.Properties.Resources.setting_tools;
             this.MsiRepairShop.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.MsiRepairShop.Name = "MsiRepairShop";
@@ -436,20 +440,20 @@
             this.MsiCreateRepairShop.Text = "Создать...";
             this.MsiCreateRepairShop.Click += new System.EventHandler(this.CreateRepairShop_Command);
             // 
-            // редактированиеДанныхToolStripMenuItem
+            // MsiEditRepairShop
             // 
-            this.редактированиеДанныхToolStripMenuItem.Image = global::HomeWork.Properties.Resources.calendar_edit;
-            this.редактированиеДанныхToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.редактированиеДанныхToolStripMenuItem.Name = "редактированиеДанныхToolStripMenuItem";
-            this.редактированиеДанныхToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.E)));
-            this.редактированиеДанныхToolStripMenuItem.Size = new System.Drawing.Size(328, 38);
-            this.редактированиеДанныхToolStripMenuItem.Text = "&Редактирование данных...";
-            this.редактированиеДанныхToolStripMenuItem.Click += new System.EventHandler(this.EditRepairShop_Command);
+            this.MsiEditRepairShop.Image = global::HomeWork.Properties.Resources.calendar_edit;
+            this.MsiEditRepairShop.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.MsiEditRepairShop.Name = "MsiEditRepairShop";
+            this.MsiEditRepairShop.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.E)));
+            this.MsiEditRepairShop.Size = new System.Drawing.Size(328, 38);
+            this.MsiEditRepairShop.Text = "&Редактирование данных...";
+            this.MsiEditRepairShop.Click += new System.EventHandler(this.EditRepairShop_Command);
             // 
             // MsiSettings
             // 
             this.MsiSettings.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.изменениеШрифтаToolStripMenuItem,
+            this.MniFont,
             this.MsiBackColor});
             this.MsiSettings.Image = global::HomeWork.Properties.Resources.cog;
             this.MsiSettings.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
@@ -457,21 +461,21 @@
             this.MsiSettings.Size = new System.Drawing.Size(131, 36);
             this.MsiSettings.Text = "&Настройки";
             // 
-            // изменениеШрифтаToolStripMenuItem
+            // MniFont
             // 
-            this.изменениеШрифтаToolStripMenuItem.Image = global::HomeWork.Properties.Resources.font_colors;
-            this.изменениеШрифтаToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.изменениеШрифтаToolStripMenuItem.Name = "изменениеШрифтаToolStripMenuItem";
-            this.изменениеШрифтаToolStripMenuItem.Size = new System.Drawing.Size(156, 38);
-            this.изменениеШрифтаToolStripMenuItem.Text = "&Шрифт...";
-            this.изменениеШрифтаToolStripMenuItem.Click += new System.EventHandler(this.ChangeFont_Command);
+            this.MniFont.Image = global::HomeWork.Properties.Resources.font_colors;
+            this.MniFont.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.MniFont.Name = "MniFont";
+            this.MniFont.Size = new System.Drawing.Size(196, 38);
+            this.MniFont.Text = "&Шрифт...";
+            this.MniFont.Click += new System.EventHandler(this.ChangeFont_Command);
             // 
             // MsiBackColor
             // 
             this.MsiBackColor.Image = global::HomeWork.Properties.Resources.color_management;
             this.MsiBackColor.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.MsiBackColor.Name = "MsiBackColor";
-            this.MsiBackColor.Size = new System.Drawing.Size(156, 38);
+            this.MsiBackColor.Size = new System.Drawing.Size(196, 38);
             this.MsiBackColor.Text = "&Фон...";
             this.MsiBackColor.Click += new System.EventHandler(this.MsiBackColor_Click);
             // 
@@ -540,20 +544,20 @@
             // CmsMain
             // 
             this.CmsMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.Cmi_ProgramInfo,
+            this.CmiProgramInfo,
             this.toolStripMenuItem2,
             this.CmiMainExit});
             this.CmsMain.Name = "CmsMainContextMenu";
             this.CmsMain.Size = new System.Drawing.Size(175, 86);
             // 
-            // Cmi_ProgramInfo
+            // CmiProgramInfo
             // 
-            this.Cmi_ProgramInfo.Image = global::HomeWork.Properties.Resources.information;
-            this.Cmi_ProgramInfo.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.Cmi_ProgramInfo.Name = "Cmi_ProgramInfo";
-            this.Cmi_ProgramInfo.Size = new System.Drawing.Size(174, 38);
-            this.Cmi_ProgramInfo.Text = "О &программе...";
-            this.Cmi_ProgramInfo.Click += new System.EventHandler(this.ProgramInfo_Comand);
+            this.CmiProgramInfo.Image = global::HomeWork.Properties.Resources.information;
+            this.CmiProgramInfo.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.CmiProgramInfo.Name = "CmiProgramInfo";
+            this.CmiProgramInfo.Size = new System.Drawing.Size(174, 38);
+            this.CmiProgramInfo.Text = "О &программе...";
+            this.CmiProgramInfo.Click += new System.EventHandler(this.ProgramInfo_Comand);
             // 
             // toolStripMenuItem2
             // 
@@ -596,11 +600,13 @@
             this.CmiRemove,
             this.toolStripMenuItem7,
             this.CmiOrderBy,
-            this.выборкаТелевизоровToolStripMenuItem,
+            this.CmiSelectionBy,
             this.toolStripMenuItem8,
+            this.CmiListInfo,
+            this.toolStripMenuItem10,
             this.CmiListExit});
             this.CmsList.Name = "CmsList";
-            this.CmsList.Size = new System.Drawing.Size(343, 364);
+            this.CmsList.Size = new System.Drawing.Size(343, 408);
             // 
             // CmiInitialization
             // 
@@ -738,18 +744,18 @@
             this.CmiOrderByPriceDescend.Text = "По убыванию";
             this.CmiOrderByPriceDescend.Click += new System.EventHandler(this.OrderBy_Command);
             // 
-            // выборкаТелевизоровToolStripMenuItem
+            // CmiSelectionBy
             // 
-            this.выборкаТелевизоровToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.CmiSelectionBy.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.CmiSelectionByMinPrice,
             this.CmiSelectionByMaster,
             this.CmiSelectionByOwner,
             this.CmiSelectionByDiagonal});
-            this.выборкаТелевизоровToolStripMenuItem.Image = global::HomeWork.Properties.Resources.select_by_adding_to_selection;
-            this.выборкаТелевизоровToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.выборкаТелевизоровToolStripMenuItem.Name = "выборкаТелевизоровToolStripMenuItem";
-            this.выборкаТелевизоровToolStripMenuItem.Size = new System.Drawing.Size(342, 38);
-            this.выборкаТелевизоровToolStripMenuItem.Text = "Выборка телевизоров";
+            this.CmiSelectionBy.Image = global::HomeWork.Properties.Resources.category_group_select;
+            this.CmiSelectionBy.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.CmiSelectionBy.Name = "CmiSelectionBy";
+            this.CmiSelectionBy.Size = new System.Drawing.Size(342, 38);
+            this.CmiSelectionBy.Text = "Выборка телевизоров";
             // 
             // CmiSelectionByMinPrice
             // 
@@ -1058,47 +1064,49 @@
             // CmsRepairShop
             // 
             this.CmsRepairShop.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.создатьToolStripMenuItem,
-            this.редактироватьДанныеToolStripMenuItem,
+            this.CmiCreateRepairShop,
+            this.CmiEditRepairShop,
             this.toolStripMenuItem9,
-            this.выходToolStripMenuItem3});
+            this.CmiInfo,
+            this.toolStripMenuItem11,
+            this.CmiExit});
             this.CmsRepairShop.Name = "CmsRepairShop";
-            this.CmsRepairShop.Size = new System.Drawing.Size(260, 124);
+            this.CmsRepairShop.Size = new System.Drawing.Size(260, 168);
             // 
-            // создатьToolStripMenuItem
+            // CmiCreateRepairShop
             // 
-            this.создатьToolStripMenuItem.Image = global::HomeWork.Properties.Resources.calendar_add;
-            this.создатьToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.создатьToolStripMenuItem.Name = "создатьToolStripMenuItem";
-            this.создатьToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.N)));
-            this.создатьToolStripMenuItem.Size = new System.Drawing.Size(259, 38);
-            this.создатьToolStripMenuItem.Text = "Создать...";
-            this.создатьToolStripMenuItem.Click += new System.EventHandler(this.CreateRepairShop_Command);
+            this.CmiCreateRepairShop.Image = global::HomeWork.Properties.Resources.calendar_add;
+            this.CmiCreateRepairShop.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.CmiCreateRepairShop.Name = "CmiCreateRepairShop";
+            this.CmiCreateRepairShop.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.N)));
+            this.CmiCreateRepairShop.Size = new System.Drawing.Size(259, 38);
+            this.CmiCreateRepairShop.Text = "Создать...";
+            this.CmiCreateRepairShop.Click += new System.EventHandler(this.CreateRepairShop_Command);
             // 
-            // редактироватьДанныеToolStripMenuItem
+            // CmiEditRepairShop
             // 
-            this.редактироватьДанныеToolStripMenuItem.Image = global::HomeWork.Properties.Resources.calendar_edit;
-            this.редактироватьДанныеToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.редактироватьДанныеToolStripMenuItem.Name = "редактироватьДанныеToolStripMenuItem";
-            this.редактироватьДанныеToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.E)));
-            this.редактироватьДанныеToolStripMenuItem.Size = new System.Drawing.Size(259, 38);
-            this.редактироватьДанныеToolStripMenuItem.Text = "Редактировать данные...";
-            this.редактироватьДанныеToolStripMenuItem.Click += new System.EventHandler(this.EditRepairShop_Command);
+            this.CmiEditRepairShop.Image = global::HomeWork.Properties.Resources.calendar_edit;
+            this.CmiEditRepairShop.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.CmiEditRepairShop.Name = "CmiEditRepairShop";
+            this.CmiEditRepairShop.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.E)));
+            this.CmiEditRepairShop.Size = new System.Drawing.Size(259, 38);
+            this.CmiEditRepairShop.Text = "Редактировать данные...";
+            this.CmiEditRepairShop.Click += new System.EventHandler(this.EditRepairShop_Command);
             // 
             // toolStripMenuItem9
             // 
             this.toolStripMenuItem9.Name = "toolStripMenuItem9";
             this.toolStripMenuItem9.Size = new System.Drawing.Size(256, 6);
             // 
-            // выходToolStripMenuItem3
+            // CmiExit
             // 
-            this.выходToolStripMenuItem3.Image = global::HomeWork.Properties.Resources.door_out;
-            this.выходToolStripMenuItem3.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.выходToolStripMenuItem3.Name = "выходToolStripMenuItem3";
-            this.выходToolStripMenuItem3.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            this.выходToolStripMenuItem3.Size = new System.Drawing.Size(259, 38);
-            this.выходToolStripMenuItem3.Text = "Выход";
-            this.выходToolStripMenuItem3.Click += new System.EventHandler(this.Exit_Command);
+            this.CmiExit.Image = global::HomeWork.Properties.Resources.door_out;
+            this.CmiExit.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.CmiExit.Name = "CmiExit";
+            this.CmiExit.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
+            this.CmiExit.Size = new System.Drawing.Size(259, 38);
+            this.CmiExit.Text = "Выход";
+            this.CmiExit.Click += new System.EventHandler(this.Exit_Command);
             // 
             // OfdLoad
             // 
@@ -1130,7 +1138,35 @@
             // 
             // FdgChangeFontList
             // 
-            this.FdgChangeFontList.Font = new System.Drawing.Font("Consolas", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.FdgChangeFontList.Font = new System.Drawing.Font("Consolas", 11.25F);
+            // 
+            // CmiListInfo
+            // 
+            this.CmiListInfo.Image = global::HomeWork.Properties.Resources.information;
+            this.CmiListInfo.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.CmiListInfo.Name = "CmiListInfo";
+            this.CmiListInfo.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.H)));
+            this.CmiListInfo.Size = new System.Drawing.Size(342, 38);
+            this.CmiListInfo.Text = "О программе...";
+            // 
+            // CmiInfo
+            // 
+            this.CmiInfo.Image = global::HomeWork.Properties.Resources.information;
+            this.CmiInfo.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.CmiInfo.Name = "CmiInfo";
+            this.CmiInfo.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.H)));
+            this.CmiInfo.Size = new System.Drawing.Size(259, 38);
+            this.CmiInfo.Text = "О программе...";
+            // 
+            // toolStripMenuItem10
+            // 
+            this.toolStripMenuItem10.Name = "toolStripMenuItem10";
+            this.toolStripMenuItem10.Size = new System.Drawing.Size(339, 6);
+            // 
+            // toolStripMenuItem11
+            // 
+            this.toolStripMenuItem11.Name = "toolStripMenuItem11";
+            this.toolStripMenuItem11.Size = new System.Drawing.Size(256, 6);
             // 
             // MainForm
             // 
@@ -1177,11 +1213,11 @@
         private System.Windows.Forms.StatusStrip StsMainStatus;
         private System.Windows.Forms.ToolStripMenuItem MsiExit;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem выходToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem помощьToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem MniExit;
+        private System.Windows.Forms.ToolStripMenuItem MsiHelp;
         private System.Windows.Forms.ToolStripMenuItem MsiInfoProgram;
         private System.Windows.Forms.ContextMenuStrip CmsMain;
-        private System.Windows.Forms.ToolStripMenuItem Cmi_ProgramInfo;
+        private System.Windows.Forms.ToolStripMenuItem CmiProgramInfo;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem CmiMainExit;
         private System.Windows.Forms.ListBox LbxTelevisions;
@@ -1204,7 +1240,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem6;
         private System.Windows.Forms.ToolStripMenuItem CmiEditElem;
         private System.Windows.Forms.ToolStripMenuItem MsiRepairShop;
-        private System.Windows.Forms.ToolStripMenuItem редактированиеДанныхToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem MsiEditRepairShop;
         private System.Windows.Forms.GroupBox GbxTelevisions;
         private System.Windows.Forms.TextBox TxbAddress;
         private System.Windows.Forms.Label LblAddress;
@@ -1212,7 +1248,7 @@
         private System.Windows.Forms.Label LblNameRepairShop;
         private System.Windows.Forms.GroupBox GbxRepairShop;
         private System.Windows.Forms.ContextMenuStrip CmsRepairShop;
-        private System.Windows.Forms.ToolStripMenuItem редактироватьДанныеToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem CmiEditRepairShop;
         private System.Windows.Forms.ToolStripMenuItem MsiOrderBy;
         private System.Windows.Forms.ToolStripMenuItem MsiOrderByModel;
         private System.Windows.Forms.ToolStripMenuItem MsiOrderByDiagonal;
@@ -1227,12 +1263,12 @@
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem8;
         private System.Windows.Forms.ToolStripMenuItem CmiListExit;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem9;
-        private System.Windows.Forms.ToolStripMenuItem выходToolStripMenuItem3;
-        private System.Windows.Forms.ToolStripMenuItem выборкаИзКоллекцииToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem CmiExit;
+        private System.Windows.Forms.ToolStripMenuItem MsiSelectBy;
         private System.Windows.Forms.ToolStripMenuItem MsiSelectionByMinPrice;
         private System.Windows.Forms.ToolStripMenuItem MsiSelectionByMaster;
         private System.Windows.Forms.ToolStripMenuItem MsiSelectionByDiagonal;
-        private System.Windows.Forms.ToolStripMenuItem выборкаТелевизоровToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem CmiSelectionBy;
         private System.Windows.Forms.ToolStripMenuItem CmiSelectionByMinPrice;
         private System.Windows.Forms.ToolStripMenuItem CmiSelectionByMaster;
         private System.Windows.Forms.ToolStripMenuItem CmiSelectionByDiagonal;
@@ -1268,15 +1304,19 @@
         private System.Windows.Forms.OpenFileDialog OfdLoad;
         private System.Windows.Forms.SaveFileDialog SfdSave;
         private System.Windows.Forms.ToolStripMenuItem MsiCreateRepairShop;
-        private System.Windows.Forms.ToolStripMenuItem создатьToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem CmiCreateRepairShop;
         private System.Windows.Forms.ToolStripMenuItem MsiSelectionByOwner;
         private System.Windows.Forms.ToolStripMenuItem TsiSelectionOwner;
         private System.Windows.Forms.ToolStripMenuItem CmiSelectionByOwner;
-        private System.Windows.Forms.ToolStripMenuItem изменениеШрифтаToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem MniFont;
         private System.Windows.Forms.ColorDialog CdgChangeColorList;
         private System.Windows.Forms.FontDialog FdgChangeFontList;
         private System.Windows.Forms.ToolStripMenuItem MsiBackColor;
         private System.Windows.Forms.ToolStripStatusLabel SlbFileSave;
+        private System.Windows.Forms.ToolStripMenuItem CmiListInfo;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem10;
+        private System.Windows.Forms.ToolStripMenuItem CmiInfo;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem11;
     }
 }
 

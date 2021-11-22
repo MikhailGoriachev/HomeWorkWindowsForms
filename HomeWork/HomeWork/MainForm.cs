@@ -73,9 +73,7 @@ namespace HomeWork
             InitializeComponent();
 
             // инициализация полей
-            // _controller = new RepairShopController(new RepairShop { Name = "Восток Сервис", Address = "Проспект Панфилова, 1А" });
             _controller = new RepairShopController();
-            // _controller.Load();
 
             // установка лямбда выражений для упорядочивания коллекции в тег
             MsiOrderByDiagonal.Tag = (Action)_controller.OrderByDiagonal;
@@ -130,9 +128,6 @@ namespace HomeWork
 
             // установка связи лист-бокса и коллекции данных
             UpdateCommunication();
-
-            // загрузка из файла
-            // _controller.Load();
 
             // загрузка данных о ремонтной мастерской
             TxbNameRepairShop.Text = _controller.Repair.Name;
@@ -204,7 +199,7 @@ namespace HomeWork
         private void AddRange_Command(object sender, EventArgs e)
         {
             // очистка 
-            _controller.Initialization();
+            _controller.Initialization(100);
 
             // обновление связи
             UpdateCommunication();
